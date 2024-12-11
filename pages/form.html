@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Обратная связь</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__wrapper">
+        <nav>
+          <ul class="header__menu">
+            <li>
+              <a href="../index.html" class="menu__item">Главная</a>
+            </li>
+            <li><a href="./tables.html" class="menu__item">Открытки</a></li>
+            <li>
+              <a href="./form.html" class="menu__item menu__item_active"
+                >Обратная связь</a
+              >
+            </li>
+            <li><a href="./userForm.html" class="menu__item">Данные</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="main__wrapper">
+        <form
+          action="https://www.bing.com/search?"
+          id="UserEnter"
+          name="UserEnter"
+          target="_blank"
+        >
+          <input type="hidden" name="q" value="search" />
+          <div>
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" value="Боб" />
+          </div>
+          <div>
+            <label for="point"
+              >Какое у вас настроение после посещения сайта? (по шкале от 0 до
+              10, 0 - плохое, 10 - отличное)</label
+            >
+            <input
+              type="number"
+              id="point"
+              name="point"
+              min="0"
+              max="10"
+              value="0"
+            />
+          </div>
+          <div>
+            <label>Нашли что-то новое для себя?</label>
+            <input type="radio" id="yes" name="result" value="yes" checked />
+            <label for="male">да</label>
+            <input type="radio" id="no" name="result" value="no" />
+            <label for="female">нет</label>
+          </div>
+          <div>
+            <label for="check_date">Дата посещения сайта:</label>
+            <input type="date" id="date" name="date" value="2024-11-11" />
+          </div>
+          <div>
+            <label for="password">Пароль для входа на сайт:</label>
+            <input type="password" id="password" name="password" value="1234" />
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="emails"
+              name="emails"
+              value="yes"
+              checked
+            />
+            <label for="comments"
+              >Согласен на получение рассылки с рекламными материалами от нашего
+              сайта:
+            </label>
+          </div>
+          <button type="submit">ОТПРАВИТЬ</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

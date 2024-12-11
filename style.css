@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+
+.main__wrapper {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+.header {
+  background-color: #ffe3fd;
+}
+
+.header__wrapper {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.menu__item {
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu__item_active {
+  text-decoration: underline;
+}
+
+/* PICTURES */
+.picture_link {
+  height: 100px;
+}
+/* TABLE */
+table {
+  color: #000000;
+  border-radius: 10px;
+  border: 1px solid #000000;
+  border-collapse: collapse;
+  width: 100%;
+  background-image: url("./images/bg.png");
+  background-size: cover;
+  background-position: center;
+}
+
+tr,
+td,
+th {
+  border: 1px solid #000000;
+  padding: 10px;
+}
+
+td > img {
+  height: 100px;
+}
+
+.a1 {
+  background-image: url("./images/newyearBG.jpg");
+}
+
+.a2 {
+  background-image: url("./images/birthdayBG.jpg");
+}
